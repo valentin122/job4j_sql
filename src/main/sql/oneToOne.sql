@@ -6,5 +6,5 @@ create table car(
 create table tech_passport(
     id serial primary key,
     number int,
-    car_id int references car(id)
+    car_id int references  car(id) unique
 );
